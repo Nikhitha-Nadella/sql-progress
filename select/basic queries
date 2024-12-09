@@ -1,1 +1,29 @@
+Example 1: Select all columns from a table
 
+SELECT * FROM employees;
+Explanation: This retrieves all columns from the employees table.
+
+Example 2: Select specific columns
+
+SELECT first_name, last_name, salary FROM employees;
+Explanation: This retrieves only the first_name, last_name, and salary columns from the employees table.
+
+Example 3: Select with a condition (WHERE clause)
+
+SELECT * FROM employees WHERE salary > 50000;
+Explanation: This retrieves all columns from the employees table where the salary is greater than 50,000.
+
+Example 4: Select with multiple conditions
+
+SELECT * FROM employees WHERE department = 'Sales' AND salary > 40000;
+Explanation: This retrieves all columns for employees in the "Sales" department with a salary greater than 40,000.
+
+Example 5: Select distinct values
+
+SELECT DISTINCT department FROM employees;
+Explanation: This retrieves all unique (distinct) values from the department column in the employees table.
+
+Example 6: Select with sorting (ORDER BY)
+
+SELECT first_name, last_name, salary FROM employees ORDER BY salary DESC;
+Explanation: This retrieves the first_name, last_name, and salary columns, sorted by the salary column in descending order.
